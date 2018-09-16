@@ -6,6 +6,9 @@ public class GameManager : MonoBehaviour {
 
 	private GameObject currentPlayer;
 
+	public List<GameObject> enemies;
+	public List<GameObject> players;
+
 	// Use this for initialization
 	void Start () {
 

@@ -17,9 +17,18 @@ public class AINavigation : MonoBehaviour {
 			POIs.Add(POI);
 		}
 
+		GameManager gameManager = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameManager>();
+
 		for (int i = 0; i < numCharactersToSpawn; i++)
 		{
-			Instantiate(characterPrefab, POIs[Random.Range(0, POIs.Count - 1)].transform.position, Quaternion.identity);
+			GameObject character = Instantiate(characterPrefab, POIs[Random.Range(0, POIs.Count - 1)].transform.position, Quaternion.identity);
+			gameManager.enemies.Add(character);
+
+			//create the initial player
+			if (i == 0)
+			{
+				character.GetComponent<PlayerControl>().MakePlayer();
+			}
 		}
 	}
 	
