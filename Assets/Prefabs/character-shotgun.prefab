@@ -668,10 +668,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectionCircle: {fileID: 1218525194279228}
+  isSelected: 0
   playerSpeed: 4
   playerTurnSpeed: 800
   flashLight: {fileID: 108144526680329388}
   infectedLight: {fileID: 108430404996104560}
+  myVelocity: 0
   playerAccel: 20
   maxInfectedLightAngle: 160
   minInfectedLightAngle: 120
@@ -682,7 +684,8 @@ MonoBehaviour:
   isInfecting: 0
   infectionDuration: 2
   infectionTime: 0
-  bloodPrefab: {fileID: 1203982864087592, guid: 8a13488e5fd1cf14bbe23752d7393077,
+  anim: {fileID: 0}
+  bloodPrefab: {fileID: 1622062869668152, guid: 7787a8a638e60aa418da8454d1c0b22e,
     type: 2}
 --- !u!114 &114366659997228956
 MonoBehaviour:
@@ -699,7 +702,7 @@ MonoBehaviour:
   minDestinationCD: 10
   detectionAngle: 40
   viewAngle: 0
-  detectionDistance: 15
+  detectionDistance: 10
   distance: 0
   headLight: {fileID: 4936600390026636}
   myVelocity: 0

@@ -8,12 +8,13 @@ public class PlayerControl : MonoBehaviour {
 	private NavMeshAgent agent;
 	public GameObject selectionCircle;
 	private ArtificialIntelligence artificialIntelligence;
-	private bool isSelected = false;
+	public bool isSelected = false;
 	public float playerSpeed;
 	public float playerTurnSpeed;
 	public Light flashLight;
 	public Light infectedLight;
-	
+	public float myVelocity;
+
 	public float playerAccel;
 	private GameObject target;
 	private GameObject victim;
@@ -26,6 +27,7 @@ public class PlayerControl : MonoBehaviour {
 	public bool isInfecting;
 	public float infectionDuration;
 	public float infectionTime;
+	public Animator anim;
 
 	public GameObject bloodPrefab;
 
@@ -37,6 +39,7 @@ public class PlayerControl : MonoBehaviour {
 		selectionCircle.SetActive(false);
 		agent = GetComponent<NavMeshAgent>();
 		artificialIntelligence = GetComponent<ArtificialIntelligence>();
+		anim = GetComponent<Animator>();
 		target = null;
 	}
 	
@@ -46,6 +49,9 @@ public class PlayerControl : MonoBehaviour {
 		{
 			if (tag == "Player")
 			{
+				myVelocity = agent.velocity.magnitude;
+				anim.SetFloat("velocity", myVelocity);
+
 				selectionCircle.SetActive(isSelected);
 
 				infectedLight.spotAngle = Mathf.Lerp(maxInfectedLightAngle, minInfectedLightAngle, deathTime);
@@ -79,7 +85,8 @@ public class PlayerControl : MonoBehaviour {
 						target = null;
 
 						//animate the victim
-						victim.GetComponent<Animator>().SetTrigger("infecting");
+						victim.GetComponent<Animator>().SetTrigger("isBeingInfected");
+						anim.SetTrigger("isInfecting");
 					}
 
 					if (infectionTime >= infectionDuration)
@@ -114,10 +121,12 @@ public class PlayerControl : MonoBehaviour {
 							if (hit.collider.tag == "Enemy" || hit.collider.tag == "Player")
 							{
 								target = hit.collider.gameObject;
+								GameObject.FindGameObjectWithTag("GameController").GetComponent<GameManager>().groundTargetMarker.transform.position = new Vector3(0,-10,0);
 							}
 							else
 							{
 								target = null;
+								GameObject.FindGameObjectWithTag("GameController").GetComponent<GameManager>().groundTargetMarker.transform.position = hit.point;
 								agent.SetDestination(hit.point);
 							}
 						}
@@ -134,7 +143,7 @@ public class PlayerControl : MonoBehaviour {
 
 	public void MakePlayer()
 	{
-		
+		anim.SetBool("isPlayer", true);
 		gameManager.enemies.Remove(gameObject);
 		gameManager.players.Add(gameObject);
 

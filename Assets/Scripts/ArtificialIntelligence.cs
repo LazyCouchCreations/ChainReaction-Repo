@@ -146,9 +146,4 @@ public class ArtificialIntelligence : MonoBehaviour {
 		isAttacking = false;
 		agent.isStopped = false;
 	}
-
-	//public void ToggleInfection()
-	//{
-	//	isGettingInfected = !isGettingInfected;
-	//}
 }

@@ -12,6 +12,7 @@ public class AINavigation : MonoBehaviour {
 
 	// Use this for initialization
 	void Awake () {
+		
 		foreach(Transform POI in POIParent)
 		{
 			POIs.Add(POI);
@@ -23,12 +24,6 @@ public class AINavigation : MonoBehaviour {
 		{
 			GameObject character = Instantiate(characterPrefab, POIs[Random.Range(0, POIs.Count - 1)].transform.position, Quaternion.identity);
 			gameManager.enemies.Add(character);
-
-			//create the initial player
-			if (i == 0)
-			{
-				character.GetComponent<PlayerControl>().MakePlayer();
-			}
 		}
 	}
 	
