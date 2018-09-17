@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.AI;
 using System.Collections;
+using UnityEngine.UI;
 
 public class PlayerControl : MonoBehaviour {
 
@@ -26,6 +27,8 @@ public class PlayerControl : MonoBehaviour {
 	public float infectionDuration;
 	public float infectionTime;
 
+	public GameObject bloodPrefab;
+
 	private GameManager gameManager;
 
 	// Use this for initialization
@@ -39,67 +42,94 @@ public class PlayerControl : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (tag == "Player")
+		try
 		{
-			selectionCircle.SetActive(isSelected);
-
-			infectedLight.spotAngle = Mathf.Lerp(maxInfectedLightAngle, minInfectedLightAngle, deathTime);
-			infectedLight.color = Color.Lerp(maxInfectedColor, minInfectedColor, deathTime);
-			deathTime += deathTimeMod * Time.deltaTime;
-
-			if (deathTime >= 1)
+			if (tag == "Player")
 			{
-				Die();
-			}
+				selectionCircle.SetActive(isSelected);
 
-			if (target != null && agent != null)
-			{
-				agent.SetDestination(target.transform.position);
-			}
+				infectedLight.spotAngle = Mathf.Lerp(maxInfectedLightAngle, minInfectedLightAngle, deathTime);
+				infectedLight.color = Color.Lerp(maxInfectedColor, minInfectedColor, deathTime);
+				deathTime += deathTimeMod * Time.deltaTime;
 
-			if (isInfecting)
-			{
-				infectionTime += Time.deltaTime;
-
-				//stop the player				
-				if (target != null)
+				if (deathTime >= 1)
 				{
-					agent.ResetPath();
-					victim = target;
-					target = null;
-				}				
-
-				if (infectionTime >= infectionDuration)
-				{
-					infectionTime = 0;
-					isInfecting = false;
-					victim.GetComponent<PlayerControl>().MakePlayer();
+					Die();
 				}
-			}
 
-			if (isSelected)
-			{
-				if (Input.GetButtonDown("Fire2"))
+				if (target != null && agent != null)
 				{
-					RaycastHit hit;
-					Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-					if (Physics.Raycast(ray, out hit))
+					agent.SetDestination(target.transform.position);
+				}
+
+				if (isInfecting)
+				{
+					infectionTime += Time.deltaTime;
+
+					//update UI
+					gameManager.textInfecting.SetActive(true);
+					gameManager.castBar.SetActive(true);
+					gameManager.castBarFill.GetComponent<Image>().fillAmount = infectionTime / infectionDuration;
+
+					//stop the player				
+					if (target != null)
 					{
-						isInfecting = false;
+						agent.ResetPath();
+						victim = target;
+						target = null;
+
+						//animate the victim
+						victim.GetComponent<Animator>().SetTrigger("infecting");
+					}
+
+					if (infectionTime >= infectionDuration)
+					{
+						gameManager.castBar.SetActive(false);
+						gameManager.textInfecting.SetActive(false);
 						infectionTime = 0;
-						if (hit.collider.tag == "Enemy" || hit.collider.tag == "Player")
+						isInfecting = false;
+						victim.GetComponent<PlayerControl>().MakePlayer();
+						victim = null;
+					}
+				}
+
+				if (isSelected)
+				{
+					if (Input.GetButtonDown("Fire2"))
+					{
+						RaycastHit hit;
+						Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+						if (Physics.Raycast(ray, out hit))
 						{
-							target = hit.collider.gameObject;
-						}
-						else
-						{
-							target = null;
-							agent.SetDestination(hit.point);
+							isInfecting = false;
+							infectionTime = 0;
+							gameManager.textInfecting.SetActive(false);
+							gameManager.castBar.SetActive(false);
+							if (victim != null)
+							{
+								victim.GetComponent<ArtificialIntelligence>().Unstun();
+								victim = null;
+							}
+							
+							if (hit.collider.tag == "Enemy" || hit.collider.tag == "Player")
+							{
+								target = hit.collider.gameObject;
+							}
+							else
+							{
+								target = null;
+								agent.SetDestination(hit.point);
+							}
 						}
 					}
 				}
 			}
 		}
+		catch (System.Exception)
+		{
+			//do nothing
+		}
+		
 	}
 
 	public void MakePlayer()
@@ -116,12 +146,16 @@ public class PlayerControl : MonoBehaviour {
 		infectedLight.enabled = true;
 		infectedLight.spotAngle = maxInfectedLightAngle;
 		deathTime = 0;
+		gameManager.textInfected.SetActive(true);
 	}
 
 	public void Die()
 	{
 		gameManager.players.Remove(gameObject);
 		Destroy(gameObject);
+		gameManager.textInfecting.SetActive(false);
+		gameManager.castBar.SetActive(false);
+		Instantiate(bloodPrefab, transform.position, Quaternion.Euler(0f, Random.Range(0, 360), 0));
 	}
 
 	public void Select()

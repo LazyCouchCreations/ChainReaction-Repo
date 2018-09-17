@@ -1,10 +1,16 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour {
 
 	private GameObject currentPlayer;
+	public GameObject castBar;
+	public GameObject castBarFill;
+	public GameObject textInfecting;
+	public GameObject textInfected;
+	public GameObject textInterrupted;
 
 	public List<GameObject> enemies;
 	public List<GameObject> players;

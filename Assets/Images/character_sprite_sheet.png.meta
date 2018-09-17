@@ -1,0 +1,1057 @@
+fileFormatVersion: 2
+guid: 0993e89cb5dafee47bec7351ba203649
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: character_oldhead
+    21300002: character_businesshead
+    21300004: character_darkhead
+    21300006: character_messyhead
+    21300008: character_baldhead
+    21300010: character_righthand
+    21300012: character_lefthanddark
+    21300014: character_righthanddark
+    21300016: character_leftarmlowerred
+    21300018: character_leftarmupperred
+    21300020: baseballbat
+    21300022: character_torsogrey
+    21300024: character_leftarmuppergrey
+    21300026: character_leftarmlowergrey
+    21300028: character_torsoblue
+    21300030: character_leftarmupperblue
+    21300032: character_leftarmlowerblue
+    21300034: character_torsored
+    21300036: character_rightarmupperred
+    21300038: character_rightarmlowerred
+    21300040: character_rightarmlowergrey
+    21300042: character_rightarmuppergrey
+    21300044: character_rightarmupperblue
+    21300046: character_rightarmlowerblue
+    21300048: character_torsowhite
+    21300050: character_rightarmupperwhite
+    21300052: character_rightarmlowerwhite
+    21300054: character_leftarmlowerwhite
+    21300056: character_leftarmupperwhite
+    21300058: character_torsopink
+    21300060: character_rightarmupperpink
+    21300062: character_rightarmlowerpink
+    21300064: character_leftarmlowerpink
+    21300066: character_torsoyellow
+    21300068: character_leftarmupperyellow
+    21300070: character_rightarmupperyellow
+    21300072: character_rightarmloweryellow
+    21300074: character_leftarmloweryellow
+    21300076: shotgun
+    21300078: pistol
+    21300080: character_lefthand
+    21300082: character_leftarmupperpink
+    21300084: character_sprite_sheet_0
+  externalObjects: {}
+  serializedVersion: 7
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: tvOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: character_oldhead
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 936
+        width: 72
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc77fee86d50cfb4bbbed4d617c8746c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_businesshead
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 938
+        width: 71
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aebdc04335a79d14bb040dc20a5cb44b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_darkhead
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 936
+        width: 72
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62d16bb92c9117e4b94e55ec18eab4ad
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_messyhead
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 940
+        width: 75
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1dd08726abb2cfb4a9d13521eca1b3c3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_baldhead
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 940
+        width: 73
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6645fcaaaec86fb4c9ec5dff5f134f5d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_righthand
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 943
+        width: 36
+        height: 37
+      alignment: 9
+      pivot: {x: 0.47641107, y: 0.4196784}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3190f4320351ac14fb5968b005d4fe04
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_lefthanddark
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 945
+        width: 44
+        height: 35
+      alignment: 9
+      pivot: {x: 0.37558863, y: 0.56718}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54844e28b5c61ff4eb1356e7d06dc373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_righthanddark
+      rect:
+        serializedVersion: 2
+        x: 596
+        y: 944
+        width: 36
+        height: 36
+      alignment: 9
+      pivot: {x: 0.47641107, y: 0.4313361}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ea7ed1c771bd9c41aeeff7a1ce8e9c2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_leftarmlowerred
+      rect:
+        serializedVersion: 2
+        x: 820
+        y: 871
+        width: 57
+        height: 50
+      alignment: 9
+      pivot: {x: 0.28856844, y: 0.678248}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2186098f0dbf41e438114ccbda8fe010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_leftarmupperred
+      rect:
+        serializedVersion: 2
+        x: 716
+        y: 859
+        width: 60
+        height: 62
+      alignment: 9
+      pivot: {x: 0.33221832, y: 0.31756935}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d970f6af35436947ae42384bdb0a753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: baseballbat
+      rect:
+        serializedVersion: 2
+        x: 952
+        y: 799
+        width: 29
+        height: 181
+      alignment: 9
+      pivot: {x: 0.4827586, y: 0.14917128}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82f96a5f3dccfcd4780e0408cd643c34
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_torsogrey
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 800
+        width: 89
+        height: 121
+      alignment: 9
+      pivot: {x: 0.46032694, y: 0.45831198}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae24a77b5cde6914cb9e112a4bc3f3ec
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_leftarmuppergrey
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 860
+        width: 60
+        height: 64
+      alignment: 9
+      pivot: {x: 0.33221766, y: 0.3076453}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01896b7ff742f314b91c90d4c2d19f4d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_leftarmlowergrey
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 874
+        width: 57
+        height: 50
+      alignment: 9
+      pivot: {x: 0.28856844, y: 0.678248}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfc10e572c4512840915f009006a532a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_torsoblue
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 797
+        width: 92
+        height: 120
+      alignment: 9
+      pivot: {x: 0.44531628, y: 0.45831248}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31c98ad0fb2bcb84db932cea29cd6d69
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_leftarmupperblue
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 856
+        width: 60
+        height: 64
+      alignment: 9
+      pivot: {x: 0.33221766, y: 0.3076453}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 813805bf419ac464b9acb022f364b3c3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_leftarmlowerblue
+      rect:
+        serializedVersion: 2
+        x: 524
+        y: 870
+        width: 56
+        height: 50
+      alignment: 9
+      pivot: {x: 0.29372144, y: 0.678248}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be798235ccc64d444b603dc684d611f4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_torsored
+      rect:
+        serializedVersion: 2
+        x: 607
+        y: 799
+        width: 89
+        height: 121
+      alignment: 9
+      pivot: {x: 0.46032694, y: 0.4545248}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 405ddc492e34e2f43aa686c45c2795b3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_rightarmupperred
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 788
+        width: 70
+        height: 40
+      alignment: 9
+      pivot: {x: 0.27367142, y: 0.54999745}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6a8f758480ad0f4bb3ae7028bb7ee7d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_rightarmlowerred
+      rect:
+        serializedVersion: 2
+        x: 831
+        y: 784
+        width: 33
+        height: 60
+      alignment: 9
+      pivot: {x: 0.4291818, y: 0.22656833}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5039ffc8e1c99bc44ae4a0cd374cae38
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_rightarmlowergrey
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 787
+        width: 33
+        height: 55
+      alignment: 9
+      pivot: {x: 0.4291818, y: 0.24716546}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4833f5adbb0b88647acf65bf4df8360a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_rightarmuppergrey
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 788
+        width: 72
+        height: 44
+      alignment: 9
+      pivot: {x: 0.26606944, y: 0.4999977}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ba3c85686651724c9625da26c341615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_rightarmupperblue
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 784
+        width: 69
+        height: 41
+      alignment: 9
+      pivot: {x: 0.27763766, y: 0.5365829}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92d7f48092d1db24785338a0276c4b89
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_rightarmlowerblue
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 784
+        width: 36
+        height: 57
+      alignment: 9
+      pivot: {x: 0.39341667, y: 0.23849298}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23e1c38fc1b2b4744a5593caec1c17e4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_torsowhite
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 635
+        width: 89
+        height: 121
+      alignment: 9
+      pivot: {x: 0.46032694, y: 0.4583124}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4711a22f67353c34aa2be7e089031fb3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_rightarmupperwhite
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 624
+        width: 70
+        height: 40
+      alignment: 9
+      pivot: {x: 0.27367142, y: 0.54999745}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59b99eaf8404bc743a540d013eb54b12
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_rightarmlowerwhite
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 620
+        width: 33
+        height: 60
+      alignment: 9
+      pivot: {x: 0.4291818, y: 0.22656833}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e234c15aa05d60946b66b8c08b45ea73
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_leftarmlowerwhite
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 707
+        width: 57
+        height: 50
+      alignment: 9
+      pivot: {x: 0.28856844, y: 0.678248}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55ab94a3a805e294e96d188825c2c29d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_leftarmupperwhite
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 695
+        width: 60
+        height: 62
+      alignment: 9
+      pivot: {x: 0.33221832, y: 0.31756935}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38a5babe91e2dc84b8c84e08fbfa1c7c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_torsopink
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 634
+        width: 89
+        height: 119
+      alignment: 9
+      pivot: {x: 0.46032694, y: 0.46601513}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 503b00e5ecec66145b13da9e93eda43b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_rightarmupperpink
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 623
+        width: 72
+        height: 41
+      alignment: 9
+      pivot: {x: 0.26606944, y: 0.5365829}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a65a3ea8dc51d5448a841b2bac5ccc93
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_rightarmlowerpink
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 620
+        width: 33
+        height: 57
+      alignment: 9
+      pivot: {x: 0.4291818, y: 0.23849298}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 415b2ddae3ebf7044884f8ce7500e1d3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_leftarmlowerpink
+      rect:
+        serializedVersion: 2
+        x: 524
+        y: 706
+        width: 57
+        height: 50
+      alignment: 9
+      pivot: {x: 0.28856844, y: 0.678248}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77321fa771d082e4185edca98de50ec2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_torsoyellow
+      rect:
+        serializedVersion: 2
+        x: 607
+        y: 632
+        width: 89
+        height: 119
+      alignment: 9
+      pivot: {x: 0.46032694, y: 0.46601513}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: feb96564f0467384092a8d4cadb3971d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_leftarmupperyellow
+      rect:
+        serializedVersion: 2
+        x: 716
+        y: 692
+        width: 60
+        height: 64
+      alignment: 9
+      pivot: {x: 0.33221832, y: 0.3076453}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf94c0205b9ac90428878dca39b15f05
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_rightarmupperyellow
+      rect:
+        serializedVersion: 2
+        x: 721
+        y: 620
+        width: 71
+        height: 41
+      alignment: 9
+      pivot: {x: 0.2698169, y: 0.5365829}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8eaeb37cfcfd874d83d9fb21398efe6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_rightarmloweryellow
+      rect:
+        serializedVersion: 2
+        x: 831
+        y: 616
+        width: 33
+        height: 60
+      alignment: 9
+      pivot: {x: 0.4291818, y: 0.22656833}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d887f7f89d537c45b6b691fc8c3c5cf
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_leftarmloweryellow
+      rect:
+        serializedVersion: 2
+        x: 820
+        y: 706
+        width: 57
+        height: 48
+      alignment: 9
+      pivot: {x: 0.28856844, y: 0.70650834}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95a94341d96d1f84b9336ea0f4b6478f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shotgun
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 572
+        width: 232
+        height: 20
+      alignment: 9
+      pivot: {x: 0.14679003, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efffaf2ab293976479becd1a1122443b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pistol
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 572
+        width: 59
+        height: 16
+      alignment: 9
+      pivot: {x: 0.20338982, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfd90f09484eb1f4391057834c76c7f6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_lefthand
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 948
+        width: 39
+        height: 36
+      alignment: 9
+      pivot: {x: 0.423741, y: 0.551425}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04c36c29436ca894caef41433438fffa
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_leftarmupperpink
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 692
+        width: 60
+        height: 64
+      alignment: 9
+      pivot: {x: 0.33221832, y: 0.3076453}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22e5d1b1a3cc7ae4186332ee1ae19930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_sprite_sheet_0
+      rect:
+        serializedVersion: 2
+        x: 788
+        y: 866
+        width: 119
+        height: 134
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e095e4b20352ead4ba6dbdd0198e1a37
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 90ad08ea479eac34ca9f547ed8699899
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

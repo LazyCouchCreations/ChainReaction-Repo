@@ -1,5 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -20,20 +19,40 @@ public class ArtificialIntelligence : MonoBehaviour {
 	public float viewAngle;
 	public float detectionDistance;
 	public float distance;
+	public Transform headLight;
+	public float myVelocity;
+	private Animator anim;
+	private AudioSource audio;
+	//shotgun
+	public int charType; //shotgun = 0
+	public AudioClip shotgunAttackClip;
+
+	private GameObject target;
+	private bool isAttacking;
+	private bool isGettingInfected;
 
 	// Use this for initialization
 	void Start () {
+		audio = GetComponent<AudioSource>();
 		gameManager = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameManager>();
 		POIs = GameObject.FindGameObjectWithTag("GameController").GetComponent<AINavigation>().GetPOIs();
 		agent = GetComponent<NavMeshAgent>();
 		speed = agent.speed;
 		angularSpeed = agent.angularSpeed;
-		SetNewDestination();		
+		SetNewDestination();
+		anim = GetComponent<Animator>();
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		
+
+		//if (isGettingInfected)
+		//{
+		//	anim.SetTrigger("infecting");
+		//}
+
+		myVelocity = agent.velocity.magnitude;
+		anim.SetFloat("velocity", myVelocity);
 
 		if (tag == "Player")
 		{
@@ -45,24 +64,28 @@ public class ArtificialIntelligence : MonoBehaviour {
 		foreach (GameObject player in players)
 		{
 			RaycastHit hit;
-			if (Physics.Linecast(transform.position, player.transform.position, out hit))
+			//cast a ray from myself to each bad guy
+			if (Physics.Linecast(headLight.position, player.transform.position, out hit))
 			{
 				if (hit.collider.tag == "Player")
 				{
-					viewAngle = Vector3.Angle(transform.forward, hit.transform.position - transform.position);
-					distance = Vector3.Distance(transform.position, hit.transform.position);
+					viewAngle = Vector3.Angle(headLight.forward, hit.transform.position - headLight.position);
+					distance = Vector3.Distance(headLight.position, hit.transform.position);
 					if (viewAngle <= detectionAngle && distance <= detectionDistance)
 					{
-						Debug.DrawLine(transform.position, player.transform.position, Color.red);
+						Debug.DrawLine(headLight.position, player.transform.position, Color.red);
 						if (hit.collider.gameObject.GetComponent<PlayerControl>().isInfecting)
 						{
-							//attack
-							hit.collider.gameObject.GetComponent<PlayerControl>().Die();
+							if (!isAttacking && !isGettingInfected)
+							{
+								Attack();
+								target = hit.collider.gameObject;
+							}							
 						}
 					}
 					else
 					{
-						Debug.DrawLine(transform.position, player.transform.position, Color.cyan);
+						Debug.DrawLine(headLight.position, player.transform.position, Color.cyan);
 					}
 					
 				}
@@ -100,4 +123,32 @@ public class ArtificialIntelligence : MonoBehaviour {
 		agent.angularSpeed = angularSpeed;
 		//resume normal animation
 	}
+
+	private void Attack()
+	{
+		isAttacking = true;
+		agent.isStopped = true;
+
+		switch (charType)
+		{
+			case 0:
+				anim.SetTrigger("shoot");
+				audio.PlayOneShot(shotgunAttackClip);
+				break;
+			default:
+				break;
+		}
+	}
+
+	private void Kill()
+	{
+		target.GetComponent<PlayerControl>().Die();
+		isAttacking = false;
+		agent.isStopped = false;
+	}
+
+	//public void ToggleInfection()
+	//{
+	//	isGettingInfected = !isGettingInfected;
+	//}
 }

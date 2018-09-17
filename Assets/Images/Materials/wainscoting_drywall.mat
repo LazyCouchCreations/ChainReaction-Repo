@@ -43,7 +43,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTexTop:
-        m_Texture: {fileID: 2800000, guid: e23a3092b9f0cba44ad5c3edb9760a82, type: 3}
+        m_Texture: {fileID: 2800000, guid: 14827123130f4f74da03aedc92607774, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTexWall:
